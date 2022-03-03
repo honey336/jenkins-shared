@@ -7,8 +7,8 @@ pipeline {
        stages {
            stage("Tools initialization") {
                steps {
-                   sh "mvn --version"
-                   sh "java -version"
+                   sh 'mvn --version'
+                   sh 'java -version'
                }
            }
            stage("Checkout Code") {
@@ -19,7 +19,7 @@ pipeline {
            }
            stage("to-test-maven") {
                steps {
-                   sh "mvn -v"
+                   sh 'mvn -v'
                }
            }
        }
